@@ -35,8 +35,16 @@
         <label for="extra_note">Extra Note: </label><br>
         <textarea name="extra_note" id="extra_note" rows="20" cols="90"></textarea>
         <br>
-        <input type="submit" value="Submit">
+        <input type="button" onclick="PopOutAlertBox()" value="Submit">
     </form>
+    <audio src="Trick_ya!.mp3" id="myAudio"></audio>
+    <script>
+        function PopOutAlertBox()
+        {
+            alert("Trick ya!");
+            myAudio.play();
+        }
+    </script>
 </body>
 </html>
 <!-- The link: https://keli2529.github.io/Lab1PizzaOrder/ -->
